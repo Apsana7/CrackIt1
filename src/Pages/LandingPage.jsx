@@ -5,7 +5,7 @@ import { Routes, Route, useLocation , Link} from 'react-router-dom';
 
 import { IoMdArrowDropdown } from "react-icons/io"; 
 
-function ProtectedRoute() {
+function LandingPage() {
   const [showStudyToolsDropdown, setShowStudyToolsDropDown] = useState(false);
 
   return (
@@ -75,4 +75,4 @@ function ProtectedRoute() {
   )
 }
 
-export default ProtectedRoute
+export default LandingPage
