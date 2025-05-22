@@ -58,20 +58,20 @@ function LoginPage() {
             </div>
             <div className='text-red-700 cursor-pointer  w-10/12 text-right'>Forget password?</div>
           
-          {/* <Link to={'/'}>
+          <Link to={'/app'}>
             <button
               className='bg-white  text-black border-2 border-purple-500  rounded-lg p-3 w-10/12 shadow-lg hover:bg-purple-400 hover:text-white transition'
               type="submit"
             >
               Log in
             </button>
-          </Link> */}
-            <button
+          </Link>
+            {/* <button
               className='bg-white  text-black border-2 border-purple-500  rounded-lg p-3 w-10/12 shadow-lg hover:bg-purple-400 hover:text-white transition'
               type="submit"
             >
               Log in
-            </button>
+            </button> */}
 
 
             <div className="w-10/12 h-[1px] bg-black mt-4 relative">
