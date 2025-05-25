@@ -32,22 +32,23 @@ function SideBar() {
     },
   ]
   return (
-    <div className='w-60 h-lvh overflow-scroll  border-r border-gray-300  flex justify-center py-12'>
+    <div className='h-lvh overflow-scroll scroll border-r bg-purple-700 border-gray-300  flex justify-center py-12'>
             <div className='flex flex-col gap-10 items-center '>
+              <div>logo</div>
       
         
 
-        <button className='p-3 bg-purple-300 w-40 h-fit flex items-center justify-center rounded-xl  text-purple-700 text-lg gap-2'><span><FiPlus /></span>create</button>
+        <button className='p-3 bg-white w-40 h-fit flex items-center justify-center rounded-xl  text-purple-500 text-lg gap-2'><span><FiPlus /></span>create</button>
 
         <div className='flex flex-col items-center justify-center gap-10'>
                     {Pages.map((val, i) => {
                         return (
                             <div key={i}>
                                 <div className='flex gap-2 items-center justify-center '>
-                                    <div className='text-xl text-purple-700'>{val.icon}</div>
+                                    <div className='text-xl text-white'>{val.icon}</div>
                                     <Link
                                         to={val.path}
-                                        className='text-lg  text-purple-700'
+                                        className='text-lg  text-white'
                                     >
                                         {val.title}
                                     </Link>

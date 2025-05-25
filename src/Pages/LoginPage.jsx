@@ -5,13 +5,13 @@ import image from '../assets/crackit2.jpg'
 import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function LoginPage() {
   const Forms = [
     {
-      name: "UserOrEmail", type: "text", placeholder: "Username or Email"
+      name: "UserOrEmail", type: "text", placeholder: "Username / Email"
     },
     {
       name: "Password", type: "password", placeholder: "Password"
@@ -38,16 +38,16 @@ function LoginPage() {
             console.log(values)
           }}
         >
-          <Form className='h-fit bg-white border-purple-600 border-2 w-3/12 flex items-center justify-center flex-col gap-4 p-4 py-8 shadow-lg rounded-xl'>
+          <Form className='h-fit bg-white  w-3/12 flex items-center justify-center flex-col gap-4 p-4 py-8 shadow-lg rounded-xl'>
 
-            <h1 className='text-black font-medium text-5xl'>Welcome</h1>
+            <h1 className='text-purple-500 font-semibold text-3xl'>Welcome</h1>
 
-            <div className='flex flex-col gap-3 w-10/12 mt-6'>
+            <div className='flex flex-col gap-8 w-10/12 mt-6'>
               {Forms.map((val, i) => (
-                <div key={i} className='flex flex-col gap-1'>
-                  <label className='font-medium'>{val.placeholder}</label>
+                <div key={i} className='flex flex-col gap-3'>
+                  <label className='font-medium text-sm'>{val.placeholder}</label>
                   <Field
-                    className='bg-white w-full rounded-md p-2 py-3 outline-none border-2 border-purple-600  focus:ring-2 focus:ring-purple-900'
+                    className='bg-white w-full rounded-md p-2 py-3 outline-none border-2 border-gray-200  focus:border-0 focus:ring focus:ring-purple-900 placeholder:text-sm ' 
                     name={val.name}
                     type={val.type}
                     placeholder={val.placeholder}
@@ -56,22 +56,16 @@ function LoginPage() {
                 </div>
               ))}
             </div>
-            <div className='text-red-700 cursor-pointer  w-10/12 text-right'>Forget password?</div>
-          
-          <Link to={'/app'}>
-            <button
-              className='bg-white  text-black border-2 border-purple-500  rounded-lg p-3 w-10/12 shadow-lg hover:bg-purple-400 hover:text-white transition'
-              type="submit"
-            >
-              Log in
-            </button>
-          </Link>
-            {/* <button
-              className='bg-white  text-black border-2 border-purple-500  rounded-lg p-3 w-10/12 shadow-lg hover:bg-purple-400 hover:text-white transition'
-              type="submit"
-            >
-              Log in
-            </button> */}
+            <div className='text-purple-500 cursor-pointer  text-sm  w-10/12 text-right'>Forget password?</div>
+
+            <Link to={'/app'} className=' w-full flex items-center justify-center'>
+              <button
+                className='  text-white border-2 bg-purple-500  rounded-lg p-3 w-10/12 shadow-lg hover:bg-white hover:text-purple-500 transition-all duration-300 cursor-pointer hover:font-bold delay-75 ease-in-out'
+                type="submit"
+              >
+                Log in
+              </button>
+            </Link>
 
 
             <div className="w-10/12 h-[1px] bg-black mt-4 relative">
@@ -89,10 +83,10 @@ function LoginPage() {
             </div>
 
 
-              <Link to={"/SignUpForm"}>
+            <Link to={"/SignUp"}>
 
-            <div className='mt-8 flex gap-3'>Don't have an account? <span className='underline text-purple-600 cursor-pointer'>Sing Up</span></div>
-              </Link>
+              <div className='mt-8 flex gap-3'>Don't have an account? <span className='underline text-purple-600 cursor-pointer'>Sign Up</span></div>
+            </Link>
 
 
 
