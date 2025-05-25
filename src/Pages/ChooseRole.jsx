@@ -11,7 +11,11 @@ function ChooseRole() {
 
       <img src={image} alt="" className='absolute top-0 left-0 w-full h-full object-cover' />
 
+<<<<<<< HEAD
       <div className='absolute top-0 left-0 w-full h-full bg-opacity-60 flex items-center justify-center'>
+=======
+      <div className='absolute top-0 left-0 w-full h-full bg-opacity-60 flex items-center justify-center '>
+>>>>>>> d489f9b7653f56ad4d8ed0a595da3765537316c9
         <div className='w-9/12 flex flex-col gap-10 mx-auto items-center justify-center'>
 
           <div className='flex flex-col items-center justify-center gap-4'>
