@@ -46,19 +46,19 @@ function BannerImages() {
 
       <div className='flex gap-10 mt-4 flex-wrap'>
         <div className='grid grid-cols-3 gap-10 items-center justify-center flex-grow'>
-          <div className='border-2 border-purple-700 rounded-2xl p-3 flex flex-col items-center justify-center gap-3 font-medium'>
+          <div className='shadow-xl cursor-pointer transform transition-transform duration-300 hover:scale-110 rounded-2xl p-3 flex flex-col items-center justify-center gap-3 font-medium'>
             <div className='text-4xl font-bold'><SiTestcafe /></div>
             <div className='w-1/2 text-center'>Total Tests Attempted</div>
             <div className='underline'>12</div>
           </div>
 
-          <div className='border-2 rounded-2xl p-3 h-full border-purple-700 flex flex-col items-center justify-center gap-3 text-lg font-medium'>
+          <div className='shadow-xl cursor-pointer transform transition-transform duration-300 hover:scale-110  rounded-2xl p-3 h-full flex flex-col items-center justify-center gap-3 text-lg font-medium'>
             <div className='text-4xl font-bold'><IoMdPaper /></div>
             <div>Last Score</div>
             <div className='underline'>55%</div>
           </div>
 
-          <div className='border-2 rounded-2xl p-3 h-full border-purple-700 flex flex-col items-center justify-center gap-3 text-lg font-medium'>
+          <div className='shadow-xl cursor-pointer transform transition-transform duration-300 hover:scale-110 rounded-2xl p-3 h-full flex flex-col items-center justify-center gap-3 text-lg font-medium'>
             <div className='text-4xl font-bold'><BsGraphUpArrow /></div>
             <div>Average Score</div>
             <div className='underline'>60%</div>
@@ -67,7 +67,7 @@ function BannerImages() {
 
         <div className='rounded-2xl p-3 bg-purple-200 border-purple-700 flex flex-col items-center justify-center gap-3 w-96 text-center'>
           <div className='text-lg font-medium'>Upload PDF documents to generate flashcards and MCQs</div>
-          <button className='w-fit h-fit p-1 border-purple-700 border-2 rounded-xl bg-white'>
+          <button className='w-fit h-fit px-4 py-2 cursor-pointer border-purple-700 border-2 rounded-xl bg-white'>
             <span className='text-lg font-bold mr-1'>+</span> Upload
           </button>
         </div>
