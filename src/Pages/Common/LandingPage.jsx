@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import BannerImage from '../assets/crackit1.jpeg';
+import BannerImage from '../../assets/crackit1.jpeg';
 import { Routes, Route, useLocation, Link } from 'react-router-dom';
 import { IoMdArrowDropdown } from "react-icons/io";
 
@@ -29,7 +29,7 @@ function LandingPage() {
 
   return (
     <div className='w-full h-lvh'>
-      <div className='flex  fixed top-4 w-10/12 px-5 right-0 left-0 mx-auto z-10 items-center justify-center py-6 rounded-md border-b-2 border-gray-100 bg-purple-100'>
+      <div className='flex  fixed top-0 w-full px-5 right-0 left-0 mx-auto z-10 items-center justify-center py-5 rounded-sm border-b-2 border-gray-100 bg-purple-100'>
         <div className='w-full  flex justify-between items-center mx-auto'>
           <div className='text-3xl font-semibold text-purple-700'>CrackIt</div>
 
@@ -86,9 +86,12 @@ function LandingPage() {
                 
               </button>
             </Link>
-            <Link to={'/SignUp'}>
-              <button className='w-fit h-fit rounded-2xl p-3 px-10 bg-purple-500 text-white hover:bg-purple-700 cursor-pointer'>
-                Sign Up
+           <Link to={"/role"}>
+              <button className='w-fit h-12 overflow-clip rounded-2xl px-10 border border-purple-500 bg-transparent  group hover:bg-purple-600 hover:text-white transition-all duration-1000 delay-75 ease-in-out text-purple-500 cursor-pointer'>
+                <div className='translate-y-3 group-hover:-translate-y-96 transition-all duration-1000 delay-75 ease-in-out'>Sign Up</div>
+                <div className='translate-y-96 group-hover:-translate-y-3 transition-all duration-700 delay-75 ease-in-out'>Sign up</div>
+
+                
               </button>
             </Link>
           </div>
@@ -102,11 +105,11 @@ function LandingPage() {
           alt="banner"
           className="absolute inset-0 w-full h-full object-cover opacity-80"
         />
-        <div className="absolute inset-0 flex flex-col bg-black/30 gap-4 items-center justify-center  text-center text-black px-4">
+        <div className="absolute inset-0 flex flex-col bg-black/20 gap-4 items-center justify-center  text-center text-black px-4">
           <h1 className="text-5xl font-bold mb-4">Turn your prep into power</h1>
           <p className="text-xl mb-4">with flashcards, mock tests, and study boosters</p>
           <p className="text-lg mb-6 italic">"Crack every exam with confidence"</p>
-          <Link to={"/SignUp"}>
+          <Link to={"/role"}>
             <button className="bg-purple-600 hover:bg-purple-900 cursor-pointer text-white px-6 py-2 rounded-2xl text-lg">
               Get started
             </button>
