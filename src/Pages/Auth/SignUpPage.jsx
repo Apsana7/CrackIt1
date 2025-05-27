@@ -1,7 +1,7 @@
 import React from 'react'
 import { Formik, Form, Field, ErrorMessage } from "formik"
 import * as yup from "yup"
-import image from '../assets/crackit2.jpg'
+import image from '../../assets/crackit2.jpg'
 
 
 const SignUpPage = () => {

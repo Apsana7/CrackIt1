@@ -10,7 +10,7 @@ import image1 from '../../../assets/image7.jpg';
 import image2 from '../../../assets/image8.jpg';
 import image3 from '../../../assets/image10.jpeg';
 
-function BannerImages() {
+function Dashboard() {
   const subjects = [
     { title: 'Physics', image: image1 },
     { title: 'Chemistry', image: image2 },
@@ -107,4 +107,4 @@ function BannerImages() {
   );
 }
 
-export default BannerImages;
+export default Dashboard;

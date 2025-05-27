@@ -3,7 +3,7 @@ import { GiTeacher } from "react-icons/gi";
 import { FcReadingEbook } from "react-icons/fc";
 import { RiAdminFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
-import image from '../assets/crackit2.jpg'
+import image from '../../assets/crackit2.jpg'
 
 function ChooseRole() {
   return (
@@ -27,7 +27,7 @@ function ChooseRole() {
               </div>
             </Link>
 
-            <Link to="/SignUpForm">
+            <Link to="/studentDashboard">
               <div className='group flex flex-col gap-5 items-center border-2 py-8 px-12 rounded-2xl bg-white border-purple-500 cursor-pointer transform transition-transform duration-300 hover:scale-110'>
                 <div className='text-6xl'><FcReadingEbook /></div>
                 <div className='font-medium'>Student</div>
