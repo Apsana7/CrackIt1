@@ -7,6 +7,7 @@ import SignUpPage from './Pages/Auth/SignUpPage'
 import LandingPage from "./Pages/Common/LandingPage"
 import ProtectedRoute from './HOC/ProtectedRoute'
 import ChooseRole from './Pages/Common/ChooseRole'
+import StuLibrary from './Pages/Student/StuLibrary'
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
           
         <Route element={<Layout/>}>
             <Route path='/studentDashboard' element={<StuDashboard/>}/>
-
+            <Route path='/StudentLibrary' element={<StuLibrary/>} />
 
 
           </Route>
