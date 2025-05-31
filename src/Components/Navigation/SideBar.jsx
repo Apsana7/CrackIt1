@@ -13,22 +13,22 @@ function SideBar() {
     {
       icon:<IoHome />,
       title:"Home",
-      path:'/app'
+      path:'/'
     },
     {
       icon:<FaRegFolderOpen />,
       title:"Library",
-      path:'/app/Library'
+      path:'/StudentLibrary'
     },
     {
       icon:<FaChartPie />,
       title:"Reports",
-      path:"/app/Reports"
+      path:"/Reports"
     },
     {
       icon:<PiSparkle />,
       title:"Ask Ai",
-      path:"/app/AskAi"
+      path:"/AskAi"
     },
   ]
   return (
