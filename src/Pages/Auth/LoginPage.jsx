@@ -6,6 +6,7 @@ import { FaFacebook, FaApple } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from 'react-router-dom';
 
+
 function LoginPage() {
   const Forms = [
     {
@@ -25,7 +26,7 @@ function LoginPage() {
     <div className='relative h-lvh w-full'>
       <img src={image} alt="Background" className='absolute top-0 left-0 w-full h-full object-cover' />
 
-      <div className='absolute top-0 left-0 w-full h-full bg-opacity-60 bg-white flex items-center justify-center'>
+      <div className='absolute top-0 left-0 w-full h-full bg-opacity-60 flex items-center justify-center'>
         <Formik
           initialValues={{ UserOrEmail: "", Password: "" }}
           validationSchema={schemas}
@@ -52,7 +53,9 @@ function LoginPage() {
               ))}
             </div>
 
+           <Link to='/passReset' className='w-full'>
             <div className='text-purple-500 cursor-pointer text-sm w-10/12 text-right'>Forgot password?</div>
+           </Link>
 
             <button
               className='text-white bg-purple-500 border-2 border-purple-500 rounded-lg p-3 w-10/12 shadow-lg hover:bg-white hover:text-purple-500 transition-all duration-300 cursor-pointer font-semibold'

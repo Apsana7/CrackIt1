@@ -8,6 +8,7 @@ import LandingPage from "./Pages/Common/LandingPage"
 import ProtectedRoute from './HOC/ProtectedRoute'
 import ChooseRole from './Pages/Common/ChooseRole'
 import StuLibrary from './Pages/Student/StuLibrary'
+import PasswordReset from './Pages/Common/PasswordReset'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path='/' element={<LandingPage/>}/>
         <Route path='/login' element={<LoginPage/>}/>
+        <Route path='/passReset' element={<PasswordReset/>}/>
         <Route path='/signUp' element={<SignUpPage/>}/>
         <Route path='/role' element={<ChooseRole/>}/>
         <Route element={<ProtectedRoute allowedRoles={['Student']} currentRole={user.role}/>}>
